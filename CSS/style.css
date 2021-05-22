@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Raleway";
+    src: local("coding-exercise/design/font/Raleway-Black.tff");
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+nav {
+    background-color: #000000;
+    opacity: 0.7;    
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    display: inline-flex;
+    list-style-type: none;
+    padding-right: 5%;
+}
+
+
+.company-logo {
+    height: 80px;
+    width: 200px;
+    margin: 10px 60px 10px 60px;
+}
