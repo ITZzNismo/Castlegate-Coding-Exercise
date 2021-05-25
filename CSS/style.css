@@ -1,3 +1,16 @@
+
+@font-face {
+    font-family: "ralewayblack";
+    src: url("/design/font/Raleway-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ralewaymedium";
+    src: url(/design/font/Raleway-Medium.ttf);
+}
+
 @font-face {
     font-family: "ralewayregular";
     src: url(/design/font/Raleway-Regular.ttf) format("truetype");
@@ -6,40 +19,15 @@
 }
 
 @font-face {
-    font-family: "ralewayblack";
-    src: url("/design/font/Raleway-Black.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
         font-family: "ralewaysemibold";
         src: url("/design/font/Raleway-SemiBold.ttf") format("truetype");
     }
-
-/* * {
-    font-family: "ralewayregular";
-} */
-
-nav {
-    background-color: #000000;
-    opacity: 0.7;
-    text-align: center;
-    align-content: center;
-    font-family: "ralewaysemibold";
-    opacity: 0.7;
-    position: absolute;
-    width: 100%;
-}
 
 a {
     opacity: 0.7;
     text-decoration: none;
     color: #ffffff !important;
 }
-
-/*a:hover {
-    font-family: "ralewaysemibold";
-} */
 
 a:active {
     font-family: "ralewayblack";
@@ -52,6 +40,17 @@ li {
     list-style-type: none;
     display: inline-block;
     padding: 30px
+}
+
+nav {
+    background-color: #000000;
+    opacity: 0.7;
+    text-align: center;
+    align-content: center;
+    font-family: "ralewaysemibold";
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
 }
 
 ul {
@@ -75,6 +74,14 @@ ul {
     width: 180px;
     margin: 10px 40px 10px 40px;
     float: left;
+}
+
+.slogan {
+    z-index: 2;
+    background-color: #000000;
+    opacity: 0.8;
+    position: absolute;
+    font-family: "ralewayblack";
 }
 
 #carousel {
@@ -105,10 +112,15 @@ ul {
     margin-bottom: 0.5%;
 }
 
-.slogan {
-    z-index: -1;
-    background-color: #000000;
-    opacity: 0.8;
-    position: absolute;
-    font-family: "ralewayblack";
+#our-mission {
+    text-align: center;
+    font-family: "ralewaymedium";
+    margin-top: 2%;
 }
+
+#our-mission-text {
+    text-align: center;
+    margin: 0% 8% 2% 8%;
+    font-family: "ralewayregular";
+}
+
