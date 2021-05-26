@@ -109,6 +109,10 @@
         display: none;
     }
 
+    #mobile-company-logo {
+        display: none;
+    }
+
     #mobile-contact-info {
         display: none;
     }
@@ -179,6 +183,25 @@
         display: none;
     }
 
+    #mobile-company-logo {
+        display: flex;
+        width: 50%;
+        z-index: 1;
+        background-color: grey;
+        float: right;
+    }
+
+    #mobile-contact-info #contact-email {
+        background-color: grey;
+        font-family: "ralewayregular";
+        text-align: left;
+    }
+
+    #mobile-contact-info #contact-number {
+        background-color: grey;
+        font-family: "ralewayregular";
+        text-align: left;
+    }
     #mobile-image {
         display: flex;
         width: 100%;
@@ -238,10 +261,6 @@
     
     .slogan {
         display: none;
-    }
-
-    .company-logo {
-        width: 50%;
     }
 
     #nav {
