@@ -1,133 +1,252 @@
-
-@font-face {
-    font-family: "ralewayblack";
-    src: url("/design/font/Raleway-Black.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "ralewaymedium";
-    src: url(/design/font/Raleway-Medium.ttf);
-}
-
-@font-face {
-    font-family: "ralewayregular";
-    src: url(/design/font/Raleway-Regular.ttf) format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-        font-family: "ralewaysemibold";
-        src: url("/design/font/Raleway-SemiBold.ttf") format("truetype");
+@media only screen and (min-width: 400px) and (max-width: 2160px) {
+    @font-face {
+        font-family: "ralewayblack";
+        src: url("/design/font/Raleway-Black.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: "ralewaymedium";
+        src: url(/design/font/Raleway-Medium.ttf);
+    }
+    
+    @font-face {
+        font-family: "ralewayregular";
+        src: url(/design/font/Raleway-Regular.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+            font-family: "ralewaysemibold";
+            src: url("/design/font/Raleway-SemiBold.ttf") format("truetype");
+        }
+    
+    a {
+        opacity: 0.7;
+        text-decoration: none;
+        color: #ffffff !important;
+    }
+    
+    a:active {
+        font-family: "ralewayblack";
     }
 
-a {
-    opacity: 0.7;
-    text-decoration: none;
-    color: #ffffff !important;
+    li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 30px
+    }
+    
+    ul {
+        padding: 10px;
+    }
+    
+    .carousel-control-next, .carousel-control-next-icon {
+        padding-left: 600px;
+        padding-bottom: 1%;
+        align-self: flex-end;
+        left: 50px;
+    }
+    
+    .carousel-control-prev, .carousel-control-prev-icon {
+        padding-left: 600px;
+        padding-bottom: 1%;
+        align-self: flex-end;
+        right: 50px;
+    }
+    
+    .company-logo {
+        height: 80px;
+        width: 180px;
+        margin: 10px 40px 10px 40px;
+        float: left;
+    }
+    
+    .slogan {
+        z-index: 2;
+        background-color: #000000;
+        opacity: 0.8;
+        position: absolute;
+        font-family: "ralewayregular";
+        font-size: x-large;
+        color: #ffffff;
+        margin: 20%;
+        padding: 2%;
+        text-align: center;
+    }
+    
+    #carousel {
+        z-index: -1;
+    }
+    
+    #contact-info {
+        background-color: #000000;
+        width: 100%;
+        display: inline-block;
+        font-family: "ralewayregular";
+        font-size: small;
+    }
+    
+    #contact-email {
+        color: #ffffff; 
+        float: right;
+        margin-right: 2%;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+    }
+    
+    #contact-number {
+        color: #ffffff; 
+        float: right;
+        margin-right: 10%;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+    }
+
+    #mobile-image {
+        display: none;
+    }
+
+    #mobile-contact-info {
+        display: none;
+    }
+
+    #mobile-nav-menu {
+        display: none;
+    }
+
+    #mobile-nav-menu-button {
+        display: none;
+    }    
+    
+    #nav {
+        background-color: #000000;
+        opacity: 0.7;
+        text-align: center;
+        align-content: center;
+        font-family: "ralewaysemibold";
+        opacity: 0.7;
+        position: absolute;
+        width: 100%;
+    }
+
+    #our-mission {
+        text-align: center;
+        font-family: "ralewaymedium";
+        margin-top: 2%;
+    }
+    
+    #our-mission-text {
+        text-align: center;
+        margin: 0% 8% 2% 8%;
+        font-family: "ralewayregular";
+    }
 }
 
-a:active {
-    font-family: "ralewayblack";
-}
+@media only screen and (max-width: 401px) {
 
-body {
-    background-image: url(/design/assets/);
-}
-li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 30px
-}
+    @font-face {
+        font-family: "ralewayblack";
+        src: url("/design/font/Raleway-Black.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: "ralewaymedium";
+        src: url(/design/font/Raleway-Medium.ttf);
+    }
+    
+    @font-face {
+        font-family: "ralewayregular";
+        src: url(/design/font/Raleway-Regular.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+            font-family: "ralewaysemibold";
+            src: url("/design/font/Raleway-SemiBold.ttf") format("truetype");
+        }
 
-nav {
-    background-color: #000000;
-    opacity: 0.7;
-    text-align: center;
-    align-content: center;
-    font-family: "ralewaysemibold";
-    opacity: 0.7;
-    position: absolute;
-    width: 100%;
-}
+    li {
+        list-style-type: none;
+    }
 
-ul {
-    padding: 10px;
-}
+    #contact-info {
+        display: none;
+    }
 
-.carousel-control-next, .carousel-control-next-icon {
-    padding-left: 600px;
-    padding-bottom: 1%;
-    align-self: flex-end;
-    left: 50px;
-}
+    #mobile-image {
+        display: flex;
+        width: 100%;
+    }
 
-.carousel-control-prev, .carousel-control-prev-icon {
-    padding-left: 600px;
-    padding-bottom: 1%;
-    align-self: flex-end;
-    right: 50px;
-}
+    #mobile-nav-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
 
-.company-logo {
-    height: 80px;
-    width: 180px;
-    margin: 10px 40px 10px 40px;
-    float: left;
-}
+    #mobile-nav-menu ul li a {
+        padding: 8px 32px 8px 8px;
+        font-family: "ralewaysemibold";
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
 
-.slogan {
-    z-index: 2;
-    background-color: #000000;
-    opacity: 0.8;
-    position: absolute;
-    font-family: "ralewayregular";
-    font-size: x-large;
-    color: #ffffff;
-    margin: 20%;
-    padding: 2%;
-    text-align: center;
-}
+    #mobile-nav-menu #closebutton {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
 
-#carousel {
-    z-index: -1;
-}
+    #mobile-nav-menu-button {
+        float: right;
+        margin: 2%;
+        border: none;
+        background-color:#ffffff;
+        font-size: xx-large;
+    }
 
-#contact-info {
-    background-color: #000000;
-    width: 100%;
-    display: inline-block;
-    font-family: "ralewayregular";
-    font-size: small;
-}
+    #our-mission {
+        text-align: center;
+        font-family: "ralewaymedium";
+        margin-top: 2%;
+    }
+    
+    #our-mission-text {
+        text-align: center;
+        margin: 0% 8% 2% 8%;
+        font-family: "ralewayregular";
+    }
 
-#contact-email {
-    color: #ffffff; 
-    float: right;
-    margin-right: 2%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-}
+    #carousel {
+        display: none;
+    }
+    
+    .slogan {
+        display: none;
+    }
 
-#contact-number {
-    color: #ffffff; 
-    float: right;
-    margin-right: 10%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-}
+    .company-logo {
+        width: 50%;
+    }
 
-#our-mission {
-    text-align: center;
-    font-family: "ralewaymedium";
-    margin-top: 2%;
-}
+    #nav {
+        display: none;
+    }
 
-#our-mission-text {
-    text-align: center;
-    margin: 0% 8% 2% 8%;
-    font-family: "ralewayregular";
 }
 

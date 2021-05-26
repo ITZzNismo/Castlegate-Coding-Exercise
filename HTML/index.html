@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="/JS/script.js"></script>
 </head>
 
 <body>
@@ -16,18 +17,41 @@
             <p id="contact-number">01904 336633</p>            
             <p id="contact-email">info@domain.co.uk</p>
         </div>
-        <nav>
+        <button id="mobile-nav-menu-button" onclick="openMobileNav()">
+            &#9776;
+        </button>
+        <div id="mobile-nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="javascript:void(0)" id="closebutton" onclick="closeMobileNav()">&times;</a></li>
+                    <li><a href="/HTML/index.html">HOME</a></li>
+                    <li><a href="javascript:void(0)">COMPANY</a></li>
+                    <li><a href="javascript:void(0)">SERVICES</a></li>
+                    <li><a href="javascript:void(0)">PORTFOLIO</a></li>
+                    <li><a href="javascript:void(0)">NEWS</a></li>
+                    <li><a href="javascript:void(0)">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav id="nav">
             <ul>
                 <img class="company-logo" src="/design/assets/logo.png" alt="ACME Company logo">
-                <li><a href="/HTML/index.html" id="home">HOME</a></li>
-                <li><a href="#" id="company">COMPANY</a></li>
-                <li><a href="#" id="services">SERVICES</a></li>
-                <li><a href="#" id="portfolio">PORTFOLIO</a></li>
-                <li><a href="#" id="news">NEWS</a></li>
-                <li><a href="#" id="contact">CONTACT</a></li>
+                <li><a href="/HTML/index.html">HOME</a></li>
+                <li><a href="javascript:void(0)">COMPANY</a></li>
+                <li><a href="javascript:void(0)">SERVICES</a></li>
+                <li><a href="javascript:void(0)">PORTFOLIO</a></li>
+                <li><a href="javascript:void(0)">NEWS</a></li>
+                <li><a href="javascript:void(0)">CONTACT</a></li>
             </ul>
         </nav>
     </header>
+    <div id="mobile-contact-info">
+        <p id="contact-number">01904 336633</p>            
+        <p id="contact-email">info@domain.co.uk</p>
+    </div>
+    <div>
+        <img id="mobile-image" src="/design/assets/banner-1.png" alt="Image of the York Minster">
+    </div>
     <div id="carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" wrap="true">
