@@ -1,3 +1,4 @@
+/*Desktop view*/
 @media only screen and (min-width: 400px) and (max-width: 2160px) {
     @font-face {
         font-family: "ralewayblack";
@@ -33,6 +34,11 @@
         font-family: "ralewayblack";
     }
 
+    body {
+        padding: 0%;
+        margin: 0%;
+    }
+
     li {
         list-style-type: none;
         display: inline-block;
@@ -60,12 +66,15 @@
     .company-logo {
         height: 80px;
         width: 180px;
-        margin: 10px 40px 10px 40px;
+        margin: 10px 60px 10px 40px;
         float: left;
+    }
+
+    .navbar-links {
+        display: none;
     }
     
     .slogan {
-        z-index: 2;
         background-color: #000000;
         opacity: 0.8;
         position: absolute;
@@ -149,7 +158,8 @@
     }
 }
 
-@media only screen and (max-width: 401px) {
+/*Mobile phone view*/
+@media only screen and (max-width: 400px) {
 
     @font-face {
         font-family: "ralewayblack";
@@ -175,8 +185,41 @@
             src: url("/design/font/Raleway-SemiBold.ttf") format("truetype");
         }
 
-    li {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
         list-style-type: none;
+    }
+
+    .navbar-links ul li a {
+        padding: 0.5rem 1rem;
+        font-family: "ralewayregular";
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }   
+
+    .slogan {
+        display: none;
+    }    
+    
+    #carousel {
+        display: none;
     }
 
     #contact-info {
@@ -184,63 +227,52 @@
     }
 
     #mobile-company-logo {
-        display: flex;
         width: 50%;
-        z-index: 1;
-        background-color: grey;
-        float: right;
+        background-color:#818181;
+        vertical-align: middle;
+        float: left;
+        margin: 2% 2%;
+    }
+
+    #mobile-contact-info {
+        display: inline-block;
+        list-style-type: none;
+        background-color: #818181;
+        margin: auto;
     }
 
     #mobile-contact-info #contact-email {
-        background-color: grey;
+        background-color:#818181;
         font-family: "ralewayregular";
-        text-align: left;
+        text-align: center;
+        float: right;
+        margin: 2% 2%;
     }
 
     #mobile-contact-info #contact-number {
-        background-color: grey;
+        background-color:#818181;
         font-family: "ralewayregular";
-        text-align: left;
+        text-align: center;
+        float: right;
+        margin: 2% 2%;
     }
     #mobile-image {
-        display: flex;
+        display: inline-block;
         width: 100%;
-    }
-
+    }    
+    
     #mobile-nav-menu {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    #mobile-nav-menu ul li a {
-        padding: 8px 32px 8px 8px;
-        font-family: "ralewaysemibold";
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-
-    #mobile-nav-menu #closebutton {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-    #mobile-nav-menu-button {
+    .mobile-nav-menu-button {
+        display: flex;
         float: right;
-        margin: 2%;
-        border: none;
-        background-color:#ffffff;
-        font-size: xx-large;
+    }
+
+    #nav {
+        display: none;
     }
 
     #our-mission {
@@ -254,18 +286,4 @@
         margin: 0% 8% 2% 8%;
         font-family: "ralewayregular";
     }
-
-    #carousel {
-        display: none;
-    }
-    
-    .slogan {
-        display: none;
-    }
-
-    #nav {
-        display: none;
-    }
-
 }
-

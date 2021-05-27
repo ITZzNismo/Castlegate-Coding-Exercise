@@ -1,7 +1,7 @@
-function openMobileNav() {
-    document.getElementById("mobile-nav-menu").style.width = "10%";
-}
+/*Script that handles mobile navbar menu*/
+const button = document.getElementsByClassName("mobile-nav-menu-button")[0]
+const navbarMenu = document.getElementsByClassName("navbar-links")[0]
 
-function closeMobileNav() {
-    document.getElementById("mobile-nav-menu").style.width = "0%";
-}
+button.addEventListener("click", () => {
+  navbarMenu.classList.toggle("active")
+})

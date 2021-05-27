@@ -8,22 +8,20 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="/JS/script.js"></script>
 </head>
 
 <body>
     <header>
         <div id="contact-info">
-            <p id="contact-number">01904 336633</p>            
+            <p id="contact-number">01904 336633</p>
             <p id="contact-email">info@domain.co.uk</p>
         </div>
-        <button id="mobile-nav-menu-button" onclick="openMobileNav()">
-            &#9776;
-        </button>
-        <div id="mobile-nav-menu">
-            <nav>
+        <nav id="mobile-nav-menu">
+            <button class="mobile-nav-menu-button" role="button">
+                &#9776;
+            </button>
+            <div class="navbar-links">
                 <ul>
-                    <li><a href="javascript:void(0)" id="closebutton" onclick="closeMobileNav()">&times;</a></li>
                     <li><a href="/HTML/index.html">HOME</a></li>
                     <li><a href="javascript:void(0)">COMPANY</a></li>
                     <li><a href="javascript:void(0)">SERVICES</a></li>
@@ -31,8 +29,8 @@
                     <li><a href="javascript:void(0)">NEWS</a></li>
                     <li><a href="javascript:void(0)">CONTACT</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
         <nav id="nav">
             <ul>
                 <img class="company-logo" src="/design/assets/logo.png" alt="ACME company logo">
@@ -45,11 +43,11 @@
             </ul>
         </nav>
     </header>
-    <div id="mobile-contact-info">
-        <p id="contact-number">01904 336633</p>            
-        <p id="contact-email">info@domain.co.uk</p>
-        <img id="mobile-company-logo" src="/design/assets/logo.png" alt="ACME company logo">
-    </div>
+    <ul id="mobile-contact-info">
+        <li><img id="mobile-company-logo" src="/design/assets/logo.png" alt="ACME company logo"></li>
+        <li id="contact-number">01904 336633</li>
+        <li id="contact-email">info@domain.co.uk</li>
+    </ul>
     <div>
         <img id="mobile-image" src="/design/assets/banner-1.png" alt="Image of the York Minster">
     </div>
@@ -75,9 +73,11 @@
     </div>
     <main>
         <h3 id="our-mission">OUR MISSION</h3>
-        <p id="our-mission-text"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ipsam reiciendis, aut, ipsa qui voluptatum numquam repellat suscipit ducimus sequi veniam fugit repudiandae, quia fuga. 
-            Eaque similique quod inventore qui quaerat.</q></p>
+        <p id="our-mission-text"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsam reiciendis, aut, ipsa qui voluptatum numquam repellat suscipit ducimus sequi veniam
+                fugit
+                repudiandae, quia fuga.
+                Eaque similique quod inventore qui quaerat.</q></p>
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -88,6 +88,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="/JS/script.js"></script>
 </body>
 
 </html>
