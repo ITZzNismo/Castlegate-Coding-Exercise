@@ -198,6 +198,7 @@
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
+        background-color: #818181;
     }
 
     .navbar-links ul li {
@@ -207,11 +208,13 @@
 
     .navbar-links ul li a {
         padding: 0.5rem 1rem;
-        font-family: "ralewayregular";
+        font-family: "ralewayregular";        
+        color: #000000;
     }
 
     .navbar-links.active {
         display: flex;
+        background-color: #818181;
     }   
 
     .slogan {
@@ -269,6 +272,10 @@
     .mobile-nav-menu-button {
         display: flex;
         float: right;
+        border: none;
+        background-color: #818181;
+        padding-left: 100%;
+        font-size: 2rem;
     }
 
     #nav {
